@@ -1,0 +1,32 @@
+# making a function name bubbleSort
+def bubbleSort(nlist):
+    for passnum in range(len(nlist)-1,0,-1):
+        for i in range(passnum):
+            if nlist[i]>nlist[i+1]:
+                temp = nlist[i] # creating a temp variable to swap two number  
+                nlist[i] = nlist[i+1]
+                nlist[i+1] = temp
+                
+                
+# PROGRAM TO TEST THE ABOVE CODE
+
+
+nlist = [14,46,43,27,57,41,45,21,70]
+bubbleSort(nlist)
+print(nlist)
+#-------------
+# OUTPUT
+# [14, 21, 27, 41, 43, 45, 46, 57, 70]
+#--------------------------------------------------------------
+# In python you have a another method to sort a list 
+# list in python have a function called sort
+#list = [4,2,1,7,3,9,5]
+#list.sort()
+#print(list)
+#------------------
+#OUTPUT
+# [1,2,3,4,5,7,9]
+
+
+# TIME COMPLEXITY OF sort() inbuilt function is O(n log n) which is better and effecieent
+# for more detail visit --https://stackoverflow.com/questions/14434490/what-is-the-complexity-of-this-python-sort-method
